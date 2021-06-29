@@ -68,7 +68,7 @@
     </li>
     <li><a href="#usage">Usage</a></li>
       <ul>
-        <li><a href="dotenv-configuration">dotenv configuration</a></li>
+        <li><a href="#dotenv-configuration">Dotenv Configuration</a></li>
         <li><a href="#running-the-project">Running the Project</a></li>
       </ul>
     <li><a href="#roadmap">Roadmap</a></li>
