@@ -177,7 +177,7 @@ Project Link: [https://github.com/drobb2020/net-ninja-node-crash-course](https:/
 ## Acknowledgements
 
 * [The Net Ninja](https://www.youtube.com/c/TheNetNinja/featured)
-* [Github Repository](https://github.com/iamshaunjp/node-crash-course)
+* [Original Github Repository](https://github.com/iamshaunjp/node-crash-course)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
