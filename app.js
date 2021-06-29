@@ -9,7 +9,7 @@ const app = express();
 
 // Connect to MongoDB Atlas
 const dbURI =
-  "mongodb+srv://drobb:vQk7GUSrL6aG6UFe@cluster0.gccgm.mongodb.net/node-tutorial?retryWrites=true&w=majority";
+  "mongodb+srv://<username>:<password>@cluster0.gccgm.mongodb.net/node-tutorial?retryWrites=true&w=majority";
 mongoose
   .connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
   .then((result) => app.listen(3000))
