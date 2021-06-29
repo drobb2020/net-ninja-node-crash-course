@@ -89,6 +89,7 @@ This project is based on a [YouTube Tutorial](https://www.youtube.com/playlist?l
 
 * [Node.js](https://nodejs.org/en/)
 * [expressjs](https://expressjs.com/)
+* [dotenv](https://www.npmjs.com/package/dotenv)
 * [MongoDb Atlas](https://www.mongodb.com/cloud/atlas/lp/try2?utm_source=google&utm_campaign=gs_americas_canada_search_core_brand_atlas_desktop&utm_term=mongodb%20atlas&utm_medium=cpc_paid_search&utm_ad=e&utm_ad_campaign_id=12212624311&gclid=Cj0KCQjw5uWGBhCTARIsAL70sLJqIKC0gb4tZtQGA-wFIy60Q18IwifJY4ahHodtUxeFH47e_VLVRL8aAnBKEALw_wcB)
 
 <!-- GETTING STARTED -->
@@ -103,14 +104,17 @@ This project assumes that you have Node.js and npm installed on your local machi
 * npm
 
   ```sh
-  npm install ejs express mongoose
+  npm install ejs express mongoose dotenv
   ```
-Other npm packages that were installed: 
+
+Other npm packages that were installed:
+
   ```sh
   npm i -g nodemon # Installed globally
   npm i lodash morgan # Installed earlier in the tutorial but not used in the final project.
   npm i serve-favicon # Installed by me to add a favicon.ico to the project (work-in-progress)
   ```
+
 * MongoDB Atlas
   
   You will also need a MongoDB Atlas account and configure a cluster and database.
