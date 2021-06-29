@@ -1,6 +1,6 @@
 <!--
 *** Thanks for checking out the Best-README-Template. If you have a suggestion
-*** that would make this better, please fork the repo and create a pull request
+*** that would make this better, please fork the net-ninja-node-crash-course and create a pull request
 *** or simply open an issue with the tag "enhancement".
 *** Thanks again! Now go create something AMAZING! :D
 ***
@@ -18,6 +18,7 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
+
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
@@ -79,14 +80,13 @@
 
 ![Blog Ninja Node.js Tutorial](https://github.com/drobb2020/net-ninja-node-crash-course/blob/main/images/screenshot.png)
 
-This is a blank template for new projects. To avoid retyping too much info. **Do a search and replace with your text editor for the following:**
-`drobb2020`, `net-ninja-node-crash-course`, `twitter_handle`, `email`, `project_title`, `project_description`
+This project is based on a [YouTube Tutorial](https://www.youtube.com/playlist?list=PL4cUxeGkcC9jsz4LDYc6kv3ymONOKxwBU) presented by The Net Ninja. This tutorial is worth watching and you will learn many valuable examples of how to work with Node.js, express, and MongoDB.
 
 ### Built With
 
-* []()
-* []()
-* []()
+* [Node.js](https://nodejs.org/en/)
+* [expressjs](https://expressjs.com/)
+* [MongoDb Atlas](https://www.mongodb.com/cloud/atlas/lp/try2?utm_source=google&utm_campaign=gs_americas_canada_search_core_brand_atlas_desktop&utm_term=mongodb%20atlas&utm_medium=cpc_paid_search&utm_ad=e&utm_ad_campaign_id=12212624311&gclid=Cj0KCQjw5uWGBhCTARIsAL70sLJqIKC0gb4tZtQGA-wFIy60Q18IwifJY4ahHodtUxeFH47e_VLVRL8aAnBKEALw_wcB)
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -95,17 +95,26 @@ To get a local copy up and running follow these simple steps.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
+This project assumes that you have Node.js and npm installed on your local machine. After that you can use npm to install the following packages:
 
 * npm
 
   ```sh
-  npm install npm@latest -g
+  npm install ejs express mongoose
   ```
+Other npm packages that were installed: 
+  ```sh
+  npm i -g nodemon # Installed globally
+  npm i lodash morgan # Installed earlier in the tutorial but not used in the final project.
+  npm i serve-favicon # Installed by me to add a favicon.ico to the project (work-in-progress)
+  ```
+* MongoDB Atlas
+  
+  You will also need a MongoDB Atlas account and configure a cluster and database.
 
 ### Installation
 
-1. Clone the repo
+1. Clone the net-ninja-node-crash-course
 
    ```sh
    git clone https://github.com/drobb2020/net-ninja-node-crash-course.git
@@ -120,9 +129,21 @@ This is an example of how to list things you need to use the software and how to
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+This is a simple example of a blog site where anyone can post a new blog, or delete an existing blog. There is no authentication mechanism attached to this project. Therefore it is not suitable for production, but is a great learning tool for Node.js and express.
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+### Running the project
+
+You will find in package.json a script named dev. To startup the project use the following command:
+
+  ```sh
+    npm run dev # this will run the project using nodemon
+  ```
+
+  ```sh
+    npm run start # This will run the project without nodemon
+  ```
+
+  In both cases the server is designed to run on: [http://localhost:3000](http://localhost:3000)
 
 <!-- ROADMAP -->
 ## Roadmap
@@ -155,21 +176,20 @@ Project Link: [https://github.com/drobb2020/net-ninja-node-crash-course](https:/
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
 
-* []()
-* []()
-* []()
+* [The Net Ninja](https://www.youtube.com/c/TheNetNinja/featured)
+* [Github Repository](https://github.com/iamshaunjp/node-crash-course)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/drobb2020/repo.svg?style=for-the-badge
-[contributors-url]: https://github.com/drobb2020/repo/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/drobb2020/repo.svg?style=for-the-badge
-[forks-url]: https://github.com/drobb2020/repo/network/members
-[stars-shield]: https://img.shields.io/github/stars/drobb2020/repo.svg?style=for-the-badge
-[stars-url]: https://github.com/drobb2020/repo/stargazers
-[issues-shield]: https://img.shields.io/github/issues/drobb2020/repo.svg?style=for-the-badge
-[issues-url]: https://github.com/drobb2020/repo/issues
-[license-shield]: https://img.shields.io/github/license/drobb2020/repo.svg?style=for-the-badge
-[license-url]: https://github.com/drobb2020/repo/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/drobb2020/net-ninja-node-crash-course.svg?style=for-the-badge
+[contributors-url]: https://github.com/drobb2020/net-ninja-node-crash-course/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/drobb2020/net-ninja-node-crash-course.svg?style=for-the-badge
+[forks-url]: https://github.com/drobb2020/net-ninja-node-crash-course/network/members
+[stars-shield]: https://img.shields.io/github/stars/drobb2020/net-ninja-node-crash-course.svg?style=for-the-badge
+[stars-url]: https://github.com/drobb2020/net-ninja-node-crash-course/stargazers
+[issues-shield]: https://img.shields.io/github/issues/drobb2020/net-ninja-node-crash-course.svg?style=for-the-badge
+[issues-url]: https://github.com/drobb2020/net-ninja-node-crash-course/issues
+[license-shield]: https://img.shields.io/github/license/drobb2020/net-ninja-node-crash-course.svg?style=for-the-badge
+[license-url]: https://github.com/drobb2020/net-ninja-node-crash-course/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/david-robb-42436a20/
