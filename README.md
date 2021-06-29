@@ -68,6 +68,7 @@
     </li>
     <li><a href="#usage">Usage</a></li>
       <ul>
+        <li><a href="dotenv-configuration">dotenv configuration</a></li>
         <li><a href="#running-the-project">Running the Project</a></li>
       </ul>
     <li><a href="#roadmap">Roadmap</a></li>
@@ -137,6 +138,10 @@ Other npm packages that were installed:
 ## Usage
 
 This is a simple example of a blog site where anyone can post a new blog, or delete an existing blog. There is no authentication mechanism attached to this project. Therefore it is not suitable for production, but is a great learning tool for Node.js and express.
+
+### Dotenv Configuration
+
+To protect your username and password to MongoDB Atlas it is highly recommended to store your MongoDB connection string in an environment variable. The npm module dotenv is perfect for this. Make sure you do not accidentally send the .env file to github by adding the filename to your gitignore file.
 
 ### Running the project
 
