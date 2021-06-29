@@ -9,8 +9,7 @@ const favicon = require("serve-favicon");
 const app = express();
 
 // Connect to MongoDB Atlas
-const dbURI =
-  `mongodb+srv://${process.env.USERNAME}:${process.env.PASSWORD}@cluster0.gccgm.mongodb.net/node-tutorial?retryWrites=true&w=majority`;
+const dbURI = process.env.MONGODBURI;
 mongoose
   .connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
   .then((result) => app.listen(3000))
